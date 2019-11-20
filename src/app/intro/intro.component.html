@@ -1,0 +1,103 @@
+
+<div class='intro-container'>
+    <div class='intro-picture'>
+    </div>
+    <div class='intro-info'>
+        <div class='intro-info-title'>
+            Hộp quà Tết Hoàng Yến 2020
+        </div>
+        <div class='intro-info-picture'>
+        </div>
+        <div class='intro-info-textfield'>
+            Bộ quà tặng bao gồm Hải Yến và Dạ Yên được thiết kế sang trọng,
+            in nổi 3D độc đáo và đa dạng, chất lượng đến từng hương vị hạt, mứt
+            , trà, rượu. Hoàng Yến Group tin rằng, mỗi hộp quà Tết được mở ra,
+            cũng là mở ra cánh cửa bước sang năm mới với nhiều tài lộc và may mắn.
+        </div>
+    </div>
+</div>
+<style>
+.intro-info-title {
+    margin-top: 10px;
+    flex:2;
+    text-align:center;
+    font-family: 'special';
+    font-size: 35px;
+    color:rgb(254, 211, 104)
+}
+.intro-info-picture {
+    flex:2;
+    margin-top:10px;
+    background-image: url("../../assets/iconmay.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+.intro-info-textfield {
+    flex:6;
+    max-width: 91%;
+    text-align: center;
+    font-family: 'bold';
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 25px;
+    color:rgb(248, 227, 175);
+    align-self: center;
+}
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    margin-top: 30px;
+    background-image: linear-gradient(to right,rgb(0, 80, 78),rgb(1, 130, 118),rgb(0, 80, 78));
+    padding-bottom: 30px;
+}
+.intro-picture {
+    margin-top: -20px;
+    height: 40vh;
+    flex:7;
+    max-width: 700px;
+    background-image: url("../../assets/set2hop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+.intro-info {
+    height: 40vh;
+    flex:3;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 30vh;
+        margin-top: 120px;
+    }
+    .intro-picture {
+        flex:10;
+        margin-top: -100px;
+        min-height: 250px;
+    }
+    .intro-info {
+        flex:10;
+        max-width: 100%;
+        max-height: 200px;
+    }
+    .intro-info-picture {
+        max-height: 5vh;
+    }
+    .intro-info-textfield {
+        line-height: 20px;
+        font-size: 13px;
+    }
+    .intro-info-title {
+        max-height: 30px;
+        font-size: 20px;
+    }
+}
+</style>

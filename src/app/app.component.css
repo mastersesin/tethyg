@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'bold';
+  src: url('../assets/VL-SOFIAPROSOFT-BOLD.OTF');
+}
+@font-face {
+  font-family: 'light';
+  src: url('../assets/VL-SOFIAPROSOFT-LIGHT.OTF');
+}
+@font-face {
+  font-family: 'special';
+  src: url('../assets/SVN-Amperzand.ttf');
+}
