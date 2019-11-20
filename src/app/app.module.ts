@@ -8,6 +8,7 @@ import { SliderComponent } from './slider/slider.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { IntroComponent } from './intro/intro.component';
 import { ProductComponent } from './product/product.component';
+import { ProductDetailPictureComponent } from './product-detail-picture/product-detail-picture.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProductComponent } from './product/product.component';
     NavbarComponent,
     SliderComponent,
     IntroComponent,
-    ProductComponent
+    ProductComponent,
+    ProductDetailPictureComponent
   ],
   imports: [
     BrowserModule,
