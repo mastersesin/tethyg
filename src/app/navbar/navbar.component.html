@@ -34,14 +34,10 @@
     background-size: 100%;
 }
 .nav-container {
-    border-top: 20px solid transparent;
-    -webkit-border-image: url("../../assets/topborder.png") 100 stretch; /* Safari 3.1-5 */
-    -o-border-image: url("../../assets/topborder.png") 100 stretch; /* Opera 11-12.1 */
-    border-image: url("../../assets/topborder.png") 100 stretch;
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to right,rgb(0, 80, 78),rgb(1, 130, 118),rgb(0, 80, 78));
-    height: 85px;
+    height: 80px;
     -webkit-box-shadow: 0px 1px 47px -9px rgba(31, 31, 31, 0.75);
     -moz-box-shadow: 0px 1px 47px -9px rgba(31, 31, 31, 0.75);
     box-shadow: 0px 1px 47px -9px rgba(31, 31, 31, 0.75);
@@ -58,8 +54,8 @@
 .nav-info-child {
     align-self: flex-end;
     width: 100%;
-    height: 65px;
-    padding:15px;
+    height: 70px;
+    padding: 5px;
 }
 ul {
     display:flex;
@@ -87,17 +83,18 @@ li:last-child {
 
 li a {
     display: block;
-    color: white;
+    color:rgb(255, 236, 188);
     text-align: center;
     padding: 20px 16px;
     text-decoration: none;
     height: 100%;
     font-family: 'bold';
-    font-size: 24px;
+    font-size: 22px;
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+    color:rgb(255, 215, 115);
+    cursor: pointer;
 }
 
 .active {

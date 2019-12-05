@@ -9,6 +9,13 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { IntroComponent } from './intro/intro.component';
 import { ProductComponent } from './product/product.component';
 import { ProductDetailPictureComponent } from './product-detail-picture/product-detail-picture.component';
+import { TermComponent } from './term/term.component';
+import { OrderFormComponent } from './order-form/order-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import {MatInputModule}from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -17,12 +24,22 @@ import { ProductDetailPictureComponent } from './product-detail-picture/product-
     SliderComponent,
     IntroComponent,
     ProductComponent,
-    ProductDetailPictureComponent
+    ProductDetailPictureComponent,
+    TermComponent,
+    OrderFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    FormsModule,
+    HttpClientModule,
+    MatInputModule
+  ],
+  exports : [
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

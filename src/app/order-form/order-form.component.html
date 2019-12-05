@@ -1,0 +1,139 @@
+<div class='order-form-container'>
+    <div class='order-form'>
+        <div class='order-form-picture'>
+
+        </div>
+        <div class='order-form-form'>
+            <div class='name'>
+                <mat-form-field style='width:100%;'>
+                    <input matInput placeholder="Họ Tên">
+                </mat-form-field>
+                <mat-form-field style='width:100%;'>
+                    <input matInput placeholder="Công ty ( nếu có )">
+                </mat-form-field>
+                <mat-form-field style='width:50%;'>
+                    <input matInput placeholder="Email">
+                </mat-form-field>
+                <mat-form-field style='width:50%;'>
+                    <input matInput placeholder="Điện thoại">
+                </mat-form-field>
+                <mat-form-field style='width:100%;'>
+                    <input matInput placeholder="Địa chỉ nhận hàng">
+                </mat-form-field>
+                <mat-form-field style='width:50%;'>
+                    <input matInput placeholder="Số lượng hộp">
+                </mat-form-field>
+                <mat-form-field style='width:50%;'>
+                    <input matInput placeholder="Ngày cần hàng">
+                </mat-form-field>
+                <mat-form-field style='width:100%;'>
+                    <input matInput placeholder="Ghi chú khác">
+                </mat-form-field>
+            </div>
+            <div class='order-button'>
+                <div class='order-button-picture'></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='hotline-container'>
+    <div class='hotline-picture'>
+
+    </div>
+</div>
+<div class='logo-group-container'>
+    <div class='logo-group-picture'>
+
+    </div>
+</div>
+<style>
+.hotline-container {
+    align-content: center;
+    width: 100%;
+}
+.hotline-picture {
+    height: 150px;
+    max-width: 1000px;
+    background-image: url("../../assets/hotlineweb.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin: 0 auto;
+}
+.logo-group-container {
+    align-content: center;
+    width: 100%;
+    background: linear-gradient(45deg,rgb(0, 99, 97),rgb(0, 114, 103),rgb(0, 75, 73));
+}
+.logo-group-picture {
+    height: 280px;
+    max-width: 1000px;
+    background-image: url("../../assets/logogroup.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin: 0 auto;
+}
+.order-button{
+    padding-right: 80px;
+}
+.order-button-picture {
+    height: 50px;
+    background-image: url("../../assets/order.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: rgb(254, 211, 104) !important;
+}
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: rgb(254, 211, 104) !important;
+} 
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: rgb(254, 211, 104)!important;
+}
+
+::ng-deep.ng-star-inserted {
+    color:rgb(254, 211, 104)!important;
+    font-family: 'light';
+}
+
+::ng-deep.mat-form-field-infix {
+    color:rgb(255, 237, 190)!important;
+    font-family: 'bold';
+}
+.name {
+    padding:40px;
+}
+.order-form-picture {
+    flex:3.5;
+    background-image: url("../../assets/hinhform.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.order-form-form {
+    flex:6.5;
+    background: linear-gradient(135deg,rgb(0, 99, 97),rgb(0, 114, 103),rgb(0, 99, 97));
+}
+.order-form-container {
+    align-content: center;
+    height: 50vh;
+    width: 100%;
+    min-height: 580px;
+}
+.order-form {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    background-color: red;
+    margin: 0 auto;
+    display: flex;
+}
+</style>

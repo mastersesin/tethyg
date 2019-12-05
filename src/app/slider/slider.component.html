@@ -1,5 +1,5 @@
 <div class='slider-container'>
-    <div class='logo-hyg'></div>
+    <div class='logo-hyg-container'><div class='logo-hyg'></div></div>
     <div class='slider'>
         <ngx-slick-carousel class="carousel"
         #slickModal="slick-carousel"
@@ -20,6 +20,11 @@
     </div>
 </div>
 <style>
+.logo-hyg-container {
+    position: relative;
+    height: 250px;
+    margin-top: -20px;
+}
 @media only screen and (max-width: 600px) {
     .logo-hyg {
         max-height: 15vh;
@@ -54,18 +59,20 @@
     margin: auto;
 }
 .logo-hyg{
+    margin-bottom: -50px;
+    position: absolute;
+    z-index: 10;
     width: 100%;
     height: 300px;
+    max-width: 1000px;
     background-image: url("../../assets/logotitle.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    margin-top: 20px;
 }
 .slider {
     height: auto;
     width: 100%;
-    background-color: red;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     -webkit-border-image: url("../../assets/slideframe.png") 100 stretch; /* Safari 3.1-5 */
