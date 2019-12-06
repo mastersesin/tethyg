@@ -1,4 +1,4 @@
-<div class='order-form-container'>
+<div class='order-form-container' id="4">
     <div class='order-form'>
         <div class='order-form-picture'>
 
@@ -47,6 +47,16 @@
     </div>
 </div>
 <style>
+@media only screen and (max-width: 600px) {
+  .order-form-picture {
+    display: none!important;
+  }
+  .logo-group-picture {
+    height: 150px!important;
+    margin-left: 20px!important;
+    margin-right: 20px!important;
+  }
+}
 .hotline-container {
     align-content: center;
     width: 100%;
@@ -84,6 +94,9 @@
     background-position: right;
     background-size: contain;
 }
+.mat-form-field-infix{
+  height: 50px;
+}
 ::ng-deep .mat-focused .mat-form-field-label {
   /*change color of label*/
   color: rgb(254, 211, 104) !important;
@@ -92,7 +105,7 @@
  ::ng-deep.mat-form-field-underline {
   /*change color of underline*/
   background-color: rgb(254, 211, 104) !important;
-} 
+}
 
 ::ng-deep.mat-form-field-ripple {
  /*change color of underline when focused*/

@@ -2,10 +2,10 @@
     <div class='nav-info'>
         <div class='nav-info-child'>
             <ul>
-                <li><a>GIỚI THIỆU</a></li>
-                <li><a>BỘ QUÀ TẶNG</a></li>
-                <li><a>CHÍNH SÁCH</a></li>
-                <li><a>LIÊN HỆ</a></li>
+                <li><a (click)="onClick(1)">GIỚI THIỆU</a></li>
+                <li><a (click)="onClick(2)">BỘ QUÀ TẶNG</a></li>
+                <li><a (click)="onClick(3)">CHÍNH SÁCH</a></li>
+                <li><a (click)="onClick(4)">LIÊN HỆ</a></li>
             </ul>
         </div>
     </div>
@@ -59,7 +59,7 @@
 }
 ul {
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -73,6 +73,7 @@ ul {
 }
 
 li {
+    padding-top: 10px;
     display: inline-block;
     min-width: 200px;
 }
@@ -85,7 +86,6 @@ li a {
     display: block;
     color:rgb(255, 236, 188);
     text-align: center;
-    padding: 20px 16px;
     text-decoration: none;
     height: 100%;
     font-family: 'bold';

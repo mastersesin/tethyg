@@ -11,5 +11,8 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onClick(id) {
+    var elmnt = document.getElementById(id);
+    elmnt.scrollIntoView();
+  }
 }

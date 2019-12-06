@@ -1,4 +1,4 @@
-<div class='product-container'>
+<div class='product-container' id='2'>
     <div class='product'>
         <div class='product-info'>
             <div class='product-info-title'>
@@ -231,6 +231,7 @@
     justify-content: center;
     align-self: center;
     min-height: 40vh;
+    flex-direction: row;
 }
 
 .product-info {
@@ -270,5 +271,18 @@
     background-position: center;
     background-size:contain;
     align-self: center;
+}
+@media screen and (max-width: 600px) {
+  .product{
+      display: flex;
+      flex-direction: column;
+      height: 800px;
+  }
+  .product-picture {
+    flex:5;
+  }
+  .product-info {
+    align-self: center!important;
+  }
 }
 </style>

@@ -19,20 +19,24 @@ export class SliderComponent implements OnInit {
     {active: false, img: "../../assets/05.jpg"},
     {active: false, img: "../../assets/06.jpg"},
   ];
-  slideConfig = {"autoplay": true,"slidesToShow": 1, "slidesToScroll": 1};
-  
+  slideConfig = {
+    "autoplay": true,
+    "slidesToShow": 1,
+     "slidesToScroll": 1,
+    };
+
   removeSlide() {
     this.slides.length = this.slides.length - 1;
   }
-  
+
   slickInit(e) {
     console.log('slick initialized');
   }
-  
+
   breakpoint(e) {
     console.log('breakpoint');
   }
-  
+
   afterChange(e) {
     for (const key in this.slides) {
       if (this.slides[key].active === true) {
@@ -41,7 +45,7 @@ export class SliderComponent implements OnInit {
     }
     this.slides[e.currentSlide].active = true;
   }
-  
+
   beforeChange(e) {
     console.log('beforeChange');
   }
